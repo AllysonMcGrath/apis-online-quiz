@@ -1,0 +1,163 @@
+h1, h2, h3, h4 {
+    display: block;
+    text-align: center;
+}
+
+h1 {
+  background-color: rgb(54, 134, 199);
+  color: rgba(255, 255, 255, 0.925);
+}
+
+#home-page {
+  display: block;
+  margin: auto;
+}
+
+#home-page p {
+  display: flex;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+}
+
+#start-btn, #high-scores-button, .save{
+    display: block;
+    background-color: rgb(21, 73, 116);
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px auto;
+
+  }
+  #start-btn span, #high-scores-button span, .save span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  #start-btn span:after, #high-scores-button span:after, .save span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #start-btn:hover, #high-scores-button:hover, .save:hover {
+    background-color: rgb(91, 151, 201);
+  }
+  #start-btn:hover span, #high-scores-button:hover span, .save:hover span {
+    padding-right: 25px;
+  }
+  #start-btn:hover span:after, #high-scores-button:hover span:after, .save:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.highScoresTitle {
+  background-color: rgb(54, 134, 199);
+}
+
+  .choices-button {
+      box-shadow:inset 0px 1px 0px 0px #ffffff;
+      background-color:#f9f9f9;
+      border-radius:6px;
+      border:1px solid #dcdcdc;
+      display: block;
+      cursor:pointer;
+      color:#666666;
+      font-family:Arial;
+      font-size:15px;
+      font-weight:bold;
+      padding:6px 24px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #ffffff;
+      margin: 10px auto;
+      width: 30%;
+    }
+    .choices-button:hover {
+      background-color:#e9e9e9;
+    }
+    .choices-button:active {
+      position:relative;
+      top:1px;
+    }
+
+    .name {
+      display: block;
+      margin: 10px auto;
+    }
+
+/* List */
+ul {
+  counter-reset: index;  
+  padding: 0;
+  max-width: 300px;
+}
+
+/* List element */
+li {
+  counter-increment: index; 
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+
+/* Element counter */
+li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, rgb(21, 73, 116), orangered);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Element separation */
+li + li {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@use postcss-preset-env {
+  stage: 0;
+  autoprefixer: {
+    grid: true;
+  }
+  browsers: last 2 versions
+}
+
