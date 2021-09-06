@@ -51,6 +51,8 @@ List CSS styles are from [freefrontend.com](https://freefrontend.com/css-lists/)
 
 James Q Quick provided tutorials on local storage [here](https://www.youtube.com/watch?v=jfOv18lCMmw) and [here](https://www.youtube.com/watch?v=DFhmNLKwwGw).
 
+Quiz Questions are from [W3Schools](https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML).
+
 
 
 
