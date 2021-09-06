@@ -2,23 +2,23 @@
 
 ## Description
 
-This is a project where I was given the index.html and style.css files for a basic website that will generate a randomized password. The main purpose was to demonstrate understanding of how to use Javascript (variables, functions).
+This is a project that is meant to demonstrate the power of Web APIs, as well as practice the use of HTML, CSS, and Javascript.
 
-I had to create multiple prompts/confirm messages for the user to input what they wanted their password to include. The site first prompts for the password length, then asks if the user wants uppercase, lowercase, numbers, and special characters to be included.
+The site is a ten question quiz with a timer and a high scores list stored in local storage.
 
-This project required creating multiple functions. I had to create a function for the generator to select randomly from all lowercase letters, and then repeat this for uppercase letters, numbers, and special characters. For most of these I used fromCharCode rather than from a string or array.
+The game starts with instructions, a start button, and a high scores button. When the game is started, the user is shown a question, answers as buttons, their score, and the timer. To progress, the user chooses an answer, and if it is correct a point is added to their score. If they choose the wrong answer, time is subtracted from the timer.
 
-A separate function was then made to select from the kinds of characters selected by the user, which then randomizes and selects characters based on the length that the user chose and on the confirm messages.
+This project shows the power of using the DOM. By using the DOM we can add HTML elements to the page as a user interacts with it, rather than having all elements display at once. This makes the page interactive and dependent on user input.
 
-This information is then passed into the text box above the generate button, giving the user their password.
+This project also demonstrates the use of local storage. Users can input their name and high score, which is then saved and can be accessed later by the same user.
 
 ## Installation
 
-You can find the deployed site [here.](https://allysonmcgrath.github.io/cbcchallenge3/)
+You can find the deployed site [here.](https://allysonmcgrath.github.io/cbcchallenge4/)
 
 To install the entire project and access the code, you can clone the repository by using the command prompt
 
-$ git clone https://github.com/AllysonMcGrath/cbcchallenge3.git
+$ git clone https://github.com/AllysonMcGrath/cbcchallenge4.git
 
 Detailed instructions for cloning GitHub repositories can be found [here.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
 
@@ -28,9 +28,7 @@ Detailed instructions for cloning GitHub repositories can be found [here.](https
 
 When displaying correctly, website should look like the image below:
 
-![Website with button to generate a password](assets/images/pwgeneratorsite.JPG)
-
-![Website with pop-up dialogue box to input a password length](assets/images/inputsite.JPG)
+![Website with quiz questions](assets/images/quizsite.JPG)
 
 Use standard git commands within this repository.
 
@@ -47,11 +45,14 @@ Trilogy Education Services, LLC, a 2U, Inc. brand
 
 [Coding Boot Camp at UT](https://github.com/the-Coding-Boot-Camp-at-UT)
 
-[Xander Rapstine](https://github.com/Xandromus)
+Button CSS styles are from [bestcssbuttongenerator](https://www.bestcssbuttongenerator.com/#/28) and [W3Docs](https://www.w3docs.com/snippets/css/how-to-style-buttons-with-css.html).
 
-[Traversy Media](https://www.youtube.com/watch?v=duNmhKgtcsI)
+List CSS styles are from [freefrontend.com](https://freefrontend.com/css-lists/)
 
-[TechnicalCafe](https://www.youtube.com/watch?v=9sT03jEwcaw)
+James Q Quick provided tutorials on local storage [here](https://www.youtube.com/watch?v=jfOv18lCMmw) and [here](https://www.youtube.com/watch?v=DFhmNLKwwGw).
+
+
+
 
 
 ## License
