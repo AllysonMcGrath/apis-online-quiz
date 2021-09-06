@@ -85,7 +85,7 @@ startBtnEl.addEventListener("click", function() {
 highScoresBtnEl.addEventListener("click", function() {
     displayHighScores();
 });
-
+    
 
 function answerClick(event) {
     var userChoice = event.target.innerHTML;
@@ -124,10 +124,19 @@ function gameOver() {
     var saveBtn = document.createElement("button");
     saveBtn.innerHTML = "Save Score";
     saveBtn.classList.add("save");
-    saveBtn.addEventListener('click', saveScore);
     document.body.appendChild(saveBtn);
+    // if (inputName == "") {
+    saveBtn.addEventListener('click', saveScore);
+//     }
+//     else {
+//         saveBtn.addEventListener("click", emptyFieldAlert);
+//     }
 
-}
+};
+
+// function emptyFieldAlert() {
+//     alert("Please enter your initials");
+// };
 
 function saveScore() {
     document.body.innerHTML = '';
@@ -145,6 +154,7 @@ function saveScore() {
     localStorage.setItem("highScores", JSON.stringify(highScores));
 
     displayHighScores()
+    
 }
 
 function displayHighScores() {
@@ -168,13 +178,24 @@ function displayHighScores() {
         document.body.appendChild(highScoresLi);
     }
 
-    // var returnBtn = document.createElement("button");
-    //         returnBtn.innerHTML = "Replay"
-    //         returnBtn.classList.add("choices-button");
-    //         returnBtn.addEventListener('click', showQuestion);
-    //         document.body.appendChild(returnBtn);
-}
+    var clearScores = document.createElement("button");
+    clearScores.innerHTML = "Clear Scores"
+    clearScores.classList.add("hs-page-button");
+    document.body.appendChild(clearScores);
+    clearScores.addEventListener('click', clearLocalStorage);
 
+    var resetPage = document.createElement("button");
+    resetPage.innerHTML = "Go Back"
+    resetPage.classList.add("hs-page-button");
+    document.body.appendChild(resetPage);
+    resetPage.addEventListener('click', reset);
+
+};
+
+function clearLocalStorage() {
+    localStorage.clear();
+    displayHighScores();
+}
 
 function showQuestion() {
         document.querySelector("#questions-body").innerHTML = ''
@@ -213,3 +234,7 @@ function scoreDisplay() {
     scoreEl.innerHTML = "Score: " + score;
     document.body.appendChild(scoreEl);
 };
+
+function reset() {
+    window.location.reload();
+}

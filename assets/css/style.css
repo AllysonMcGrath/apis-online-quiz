@@ -20,7 +20,7 @@ h1 {
   margin: auto;
 }
 
-#start-btn, #high-scores-button, .save{
+#start-btn, #high-scores-button, .save, .hs-page-button{
     display: block;
     background-color: rgb(21, 73, 116);
     border-radius: 10px;
@@ -35,13 +35,13 @@ h1 {
     margin: 10px auto;
 
   }
-  #start-btn span, #high-scores-button span, .save span {
+  #start-btn span, #high-scores-button span, .save span, .hs-page-button span{
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
-  #start-btn span:after, #high-scores-button span:after, .save span:after {
+  #start-btn span:after, #high-scores-button span:after, .save span:after, .hs-page-button:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -49,13 +49,13 @@ h1 {
     right: -20px;
     transition: 0.5s;
   }
-  #start-btn:hover, #high-scores-button:hover, .save:hover {
+  #start-btn:hover, #high-scores-button:hover, .save:hover, .hs-page-button:hover {
     background-color: rgb(91, 151, 201);
   }
-  #start-btn:hover span, #high-scores-button:hover span, .save:hover span {
+  #start-btn:hover span, #high-scores-button:hover span, .save:hover span, .hs-page-button:hover span {
     padding-right: 25px;
   }
-  #start-btn:hover span:after, #high-scores-button:hover span:after, .save:hover span:after {
+  #start-btn:hover span:after, #high-scores-button:hover span:after, .save:hover span:after, .hs-page-button:hover span:after {
     opacity: 1;
     right: 0;
   }
