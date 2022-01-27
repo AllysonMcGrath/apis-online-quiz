@@ -18,15 +18,13 @@ You can find the deployed site [here.](https://allysonmcgrath.github.io/apis-onl
 
 To install the entire project and access the code, you can clone the repository by using the command prompt
 
-$ git clone https://github.com/AllysonMcGrath/cbcchallenge4.git
+$ git clone https://github.com/AllysonMcGrath/apis-online-quiz.git
 
 Detailed instructions for cloning GitHub repositories can be found [here.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
 
 
 
 ## Usage
-
-You can find the site [here](https://allysonmcgrath.github.io/apis-online-quiz/).
 
 When displaying correctly, website should look like the image below:
 
