@@ -14,7 +14,7 @@ This project also demonstrates the use of local storage. Users can input their n
 
 ## Installation
 
-You can find the deployed site [here.](https://allysonmcgrath.github.io/cbcchallenge4/)
+You can find the deployed site [here.](https://allysonmcgrath.github.io/apis-online-quiz/)
 
 To install the entire project and access the code, you can clone the repository by using the command prompt
 
