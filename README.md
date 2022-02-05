@@ -1,4 +1,4 @@
-# Web APIs-Online Quiz
+# Code Quiz-Web APIs
 
 ## Description
 
